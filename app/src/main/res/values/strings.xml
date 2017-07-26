@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Beacon</string>
+
+    <string-array name="filters">
+        <item>Electronics and Appliances</item>
+        <item>Fashion</item>
+        <item>Food and Drinks</item>
+    </string-array>
+</resources>
