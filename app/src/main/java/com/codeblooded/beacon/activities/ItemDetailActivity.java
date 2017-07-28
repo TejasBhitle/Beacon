@@ -2,6 +2,7 @@ package com.codeblooded.beacon.activities;
 
 import android.animation.Animator;
 import android.annotation.TargetApi;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -18,12 +19,16 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 
 import com.codeblooded.beacon.R;
+import com.codeblooded.beacon.activities.tempactivites.ItemFullDetailActivity;
+import com.codeblooded.beacon.activities.tempactivites.SearchActivity;
 
 /**
  * Created by tejas on 7/26/17.
  */
 
 public class ItemDetailActivity extends AppCompatActivity {
+
+    ProgressDialog progressDialog;
 
     @Override
     protected void onStart() {
@@ -67,6 +72,25 @@ public class ItemDetailActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(getResources().getDrawable(R.drawable.ic_close_white_24dp));
 
+
+        findViewById(R.id.button1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                progressDialog = new ProgressDialog(ItemDetailActivity.this);
+                progressDialog.setMessage("Loading...");
+                progressDialog.show();
+                new Handler().postDelayed(
+                        new Runnable(){
+                            @Override
+                            public void run() {
+                                progressDialog.cancel();
+                                startActivity(new Intent(ItemDetailActivity.this, ItemFullDetailActivity.class));
+                            }
+                        },2000
+                );
+
+            }
+        });
         transition();
     }
 

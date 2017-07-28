@@ -81,13 +81,27 @@
                         android:padding="10dp"
                         android:visibility="invisible"
                         android:background="@color/colorAccent">
-                        <TextView
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/offer1_offer"
-                            android:textSize="25sp"
-                            android:padding="10dp"
-                            android:textColor="@color/white"/>
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="5"
+                                android:layout_height="wrap_content"
+                                android:text="@string/offer1_offer"
+                                android:textSize="25sp"
+                                android:padding="10dp"
+                                android:textColor="@color/white"/>
+                            <Button
+                                android:id="@+id/button1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MORE"
+                                android:background="@color/white"
+                                android:textColor="@color/colorAccent"/>
+                        </LinearLayout>
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -95,6 +109,7 @@
                             android:textSize="18sp"
                             android:padding="10dp"
                             android:textColor="@color/white"/>
+
                     </LinearLayout>
                 </FrameLayout>
 
@@ -131,13 +146,26 @@
                         android:padding="10dp"
                         android:visibility="invisible"
                         android:background="@color/card_bg">
-                        <TextView
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/offer2_offer"
-                            android:textSize="25sp"
-                            android:padding="10dp"
-                            android:textColor="@color/white"/>
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="5"
+                                android:layout_height="wrap_content"
+                                android:text="@string/offer2_offer"
+                                android:textSize="25sp"
+                                android:padding="10dp"
+                                android:textColor="@color/white"/>
+                            <Button
+                                android:id="@+id/button2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MORE"
+                                android:background="@color/white"
+                                android:textColor="@color/colorAccent"/>
+                        </LinearLayout>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -181,13 +209,26 @@
                         android:padding="10dp"
                         android:visibility="invisible"
                         android:background="@color/yellow">
-                        <TextView
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/offer3_offer"
-                            android:textSize="25sp"
-                            android:padding="10dp"
-                            android:textColor="@color/white"/>
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="5"
+                                android:layout_height="wrap_content"
+                                android:text="@string/offer3_offer"
+                                android:textSize="25sp"
+                                android:padding="10dp"
+                                android:textColor="@color/white"/>
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MORE"
+                                android:background="@color/white"
+                                android:textColor="@color/colorAccent"/>
+                        </LinearLayout>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

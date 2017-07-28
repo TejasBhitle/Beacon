@@ -24,6 +24,9 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".activities.tempactivites.ItemFullDetailActivity"
+            android:parentActivityName=".activities.ItemDetailActivity"/>
+
     </application>
 
 </manifest>
