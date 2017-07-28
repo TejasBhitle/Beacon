@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">Beacon</string>
+    <string name="temp_item_welcome_text">Welcome to Reebok</string>
+    <string name="temp_item_welcome_info">Grand Sale today. Check out our top exciting offers</string>
+
+    <string name="offer1_name">Super Elite Running Shoes</string>
+    <string name="offer1_offer">Flat 25% Off</string>
+
+    <string name="offer2_name">Court Sneakers</string>
+    <string name="offer2_offer">No Cost EMI with 10% Off</string>
+
+    <string name="offer3_name">Core Flip Slippers</string>
+    <string name="offer3_offer">Flat 35% Off</string>
 
     <string-array name="filters">
         <item>Electronics and Appliances</item>
