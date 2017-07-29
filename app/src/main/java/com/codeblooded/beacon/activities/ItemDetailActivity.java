@@ -84,7 +84,55 @@ public class ItemDetailActivity extends AppCompatActivity {
                             @Override
                             public void run() {
                                 progressDialog.cancel();
-                                startActivity(new Intent(ItemDetailActivity.this, ItemFullDetailActivity.class));
+                                Intent intent = new Intent(ItemDetailActivity.this, ItemFullDetailActivity.class);
+                                Bundle bundle =new Bundle();
+                                bundle.putInt("key",1);
+                                intent.putExtras(bundle);
+                                startActivity(intent);
+                            }
+                        },2000
+                );
+
+            }
+        });
+        findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                progressDialog = new ProgressDialog(ItemDetailActivity.this);
+                progressDialog.setMessage("Loading...");
+                progressDialog.show();
+                new Handler().postDelayed(
+                        new Runnable(){
+                            @Override
+                            public void run() {
+                                progressDialog.cancel();
+                                Intent intent = new Intent(ItemDetailActivity.this, ItemFullDetailActivity.class);
+                                Bundle bundle =new Bundle();
+                                bundle.putInt("key",2);
+                                intent.putExtras(bundle);
+                                startActivity(intent);
+                            }
+                        },2000
+                );
+
+            }
+        });
+        findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                progressDialog = new ProgressDialog(ItemDetailActivity.this);
+                progressDialog.setMessage("Loading...");
+                progressDialog.show();
+                new Handler().postDelayed(
+                        new Runnable(){
+                            @Override
+                            public void run() {
+                                progressDialog.cancel();
+                                Intent intent = new Intent(ItemDetailActivity.this, ItemFullDetailActivity.class);
+                                Bundle bundle =new Bundle();
+                                bundle.putInt("key",3);
+                                intent.putExtras(bundle);
+                                startActivity(intent);
                             }
                         },2000
                 );
