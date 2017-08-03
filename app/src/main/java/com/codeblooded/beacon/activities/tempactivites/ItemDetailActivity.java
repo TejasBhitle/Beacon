@@ -1,4 +1,4 @@
-package com.codeblooded.beacon.activities;
+package com.codeblooded.beacon.activities.tempactivites;
 
 import android.animation.Animator;
 import android.annotation.TargetApi;
@@ -12,15 +12,12 @@ import android.support.v4.view.animation.LinearOutSlowInInterpolator;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.transition.Slide;
-import android.transition.Transition;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 
 import com.codeblooded.beacon.R;
-import com.codeblooded.beacon.activities.tempactivites.ItemFullDetailActivity;
-import com.codeblooded.beacon.activities.tempactivites.SearchActivity;
 
 /**
  * Created by tejas on 7/26/17.

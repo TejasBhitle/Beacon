@@ -1,4 +1,4 @@
-package com.codeblooded.beacon.activities;
+package com.codeblooded.beacon.activities.tempactivites;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -22,7 +22,7 @@ import com.codeblooded.beacon.util.RecyclerItemClickListener;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class TempMainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
     ImageButton expandButton;
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        progressDialog = new ProgressDialog(MainActivity.this);
+        progressDialog = new ProgressDialog(TempMainActivity.this);
         progressDialog.setMessage("Searching...");
         progressDialog.show();
         new Handler().postDelayed(
@@ -114,15 +114,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setRecyclerView(final ArrayList<Item> itemArrayList){
-        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
-        recyclerView.setAdapter(new ItemAdapter(itemArrayList,MainActivity.this));
-        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(MainActivity.this,
+        recyclerView.setLayoutManager(new LinearLayoutManager(TempMainActivity.this));
+        recyclerView.setAdapter(new ItemAdapter(itemArrayList,TempMainActivity.this));
+        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(TempMainActivity.this,
                 new RecyclerItemClickListener.OnClickItemInterface() {
             @Override
             public void onItemClick(View view, int position) {
                 Bundle bundle = new Bundle();
                 bundle.putParcelable("item",itemArrayList.get(position));
-                Intent i = new Intent(MainActivity.this,ItemDetailActivity.class);
+                Intent i = new Intent(TempMainActivity.this,ItemDetailActivity.class);
                 i.putExtras(bundle);
                 startActivity(i);
             }

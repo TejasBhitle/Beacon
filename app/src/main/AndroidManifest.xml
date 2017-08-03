@@ -4,28 +4,31 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/beacon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/beacon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity">
-
-        </activity>
-
-        <activity android:name=".activities.ItemDetailActivity"
-            android:parentActivityName=".activities.tempactivites.SearchActivity"/>
-
-        <!--Todo:Delete Later-->
-        <activity android:name=".activities.tempactivites.SearchActivity">
+        <activity android:name=".activities.tempactivites.TempMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+        <activity android:name=".activities.tempactivites.ItemDetailActivity"
+            android:parentActivityName=".activities.tempactivites.SearchActivity"/>
+
+
+
+        <!--Temp start-->
+        <activity android:name=".activities.tempactivites.SearchActivity">
+
+        </activity>
+
         <activity android:name=".activities.tempactivites.ItemFullDetailActivity"
-            android:parentActivityName=".activities.ItemDetailActivity"/>
+            android:parentActivityName=".activities.tempactivites.ItemDetailActivity"/>
+        <!--Temp end-->
 
     </application>
 

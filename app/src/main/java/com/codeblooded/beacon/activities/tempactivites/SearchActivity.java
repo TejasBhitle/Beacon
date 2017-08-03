@@ -8,7 +8,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.codeblooded.beacon.R;
-import com.codeblooded.beacon.activities.ItemDetailActivity;
 
 /**
  * Created by tejas on 7/28/17.
