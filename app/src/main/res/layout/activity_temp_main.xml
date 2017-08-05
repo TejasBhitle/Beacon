@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codeblooded.beacon.activities.tempactivites.TempMainActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <!--Filter-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Filter"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textAlignment="viewStart"/>
+                <EditText
+                    android:id="@+id/filterTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@android:color/transparent"
+                    android:text="None"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:paddingEnd="20dp"/>
+                <ImageButton
+                    android:id="@+id/expandButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/svg_expand_more_black_24dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/expandView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkbox_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="None"/>
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkbox_fashion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="Fashion"/>
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="Electronics"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"/>
+
+</LinearLayout>
