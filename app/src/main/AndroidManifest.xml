@@ -22,6 +22,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".activities.tempactivites.LeDeviceDetailsActivity"
+            android:parentActivityName=".activities.MainActivity"/>
 
 
         <!--Temp start-->
